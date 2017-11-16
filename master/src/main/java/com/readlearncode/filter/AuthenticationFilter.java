@@ -26,5 +26,8 @@ public class AuthenticationFilter implements Filter {
             ((HttpServletResponse) response).sendRedirect("/admin-login.html");
         }
 
+        // After calling the servlet process flows back to the filter and the response object
+        // can be inspected.
+
     }
 }
