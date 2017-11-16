@@ -12,6 +12,7 @@
 
     <modules>
         <module>02_02_start</module>
+        <module>master</module>
         <!--<module>master</module>-->
     </modules>
 
