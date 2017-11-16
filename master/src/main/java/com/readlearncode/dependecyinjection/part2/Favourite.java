@@ -14,5 +14,5 @@ import java.lang.annotation.Target;
  */
 @Qualifier
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.TYPE, ElementType.PARAMETER, ElementType.FIELD})
+@Target({ElementType.TYPE, ElementType.PARAMETER, ElementType.FIELD, ElementType.CONSTRUCTOR})
 public @interface Favourite {}

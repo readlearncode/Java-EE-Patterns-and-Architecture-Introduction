@@ -1,4 +1,4 @@
-package com.readlearncode.dependecyinjection.part1;
+package com.readlearncode.dependecyinjection.part1_1;
 
 /**
  * Source code github.com/readlearncode
@@ -6,5 +6,5 @@ package com.readlearncode.dependecyinjection.part1;
  * @author Alex Theedom www.readlearncode.com
  * @version 1.0
  */
-public interface Subject {
+public class Maths implements Subject{
 }

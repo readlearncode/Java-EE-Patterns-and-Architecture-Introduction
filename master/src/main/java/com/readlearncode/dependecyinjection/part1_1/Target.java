@@ -1,4 +1,4 @@
-package com.readlearncode.dependecyinjection.part1;
+package com.readlearncode.dependecyinjection.part1_1;
 
 import javax.inject.Inject;
 
@@ -11,6 +11,6 @@ import javax.inject.Inject;
 public class Target {
 
     @Inject
-    private Maths maths;
+    private Subject subject;
 
 }
