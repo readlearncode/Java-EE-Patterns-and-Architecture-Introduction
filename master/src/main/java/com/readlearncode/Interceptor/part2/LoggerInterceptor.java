@@ -35,6 +35,10 @@ public class LoggerInterceptor {
     @AroundConstruct
     private Object doClassLogging(InvocationContext ic) throws Exception {
         logger.info("Constructor: " + ic.getConstructor() + " on class: " + ic.getTarget());
-        return ic.proceed();
+        long start = System.currentTimeMillis();
+        Object rtn = ic.proceed();
+        long end = System.currentTimeMillis();
+        logger.info("Execution time: " + (end - start));
+        return rtn;
     }
 }

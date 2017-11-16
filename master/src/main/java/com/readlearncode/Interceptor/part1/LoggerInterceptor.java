@@ -26,14 +26,20 @@ public class LoggerInterceptor {
 
     @AroundInvoke
     private Object doMethodLogging(InvocationContext ic) throws Exception {
-        List<String> params = Stream.of(ic.getParameters()).map(Object::toString).collect(Collectors.toList());
+        List<String> params = Stream.of(ic.getParameters())
+                .map(Object::toString)
+                .collect(Collectors.toList());
         logger.info("Method: " + ic.getMethod().getName() + " called with parameters: " + params);
         return ic.proceed();
     }
 
     @AroundConstruct
-    private Object doClassLogging(InvocationContext ic) throws Exception {
-        logger.info("Constructor: " + ic.getConstructor() + " on class: " + ic.getTarget());
-        return ic.proceed();
+    private void doClassLogging(InvocationContext ic) throws Exception {
+
+        long start = System.currentTimeMillis();
+        ic.proceed();
+        long end = System.currentTimeMillis();
+
+        logger.info("Execution time: " + (end - start));
     }
 }
