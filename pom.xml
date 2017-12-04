@@ -18,6 +18,8 @@
         <module>02_04_end</module>
         <module>02_05_start</module>
         <module>02_05_end</module>
+        <module>02_07_start</module>
+        <module>02_07_end</module>
     </modules>
 
     <packaging>pom</packaging>
