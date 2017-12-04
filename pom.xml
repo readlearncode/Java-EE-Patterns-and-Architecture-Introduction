@@ -11,9 +11,9 @@
     <url>www.readlearncode.com</url>
 
     <modules>
-        <module>02_02_start</module>
         <module>master</module>
-        <!--<module>master</module>-->
+        <module>02_03_start</module>
+        <module>02_03_end</module>
     </modules>
 
     <packaging>pom</packaging>
