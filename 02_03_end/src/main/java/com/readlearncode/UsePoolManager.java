@@ -1,4 +1,4 @@
-package com.readlearncode.singleton.part1;
+package com.readlearncode;
 
 import javax.inject.Inject;
 
