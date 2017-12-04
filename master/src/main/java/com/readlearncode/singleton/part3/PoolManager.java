@@ -13,7 +13,7 @@ import java.util.concurrent.LinkedBlockingQueue;
  * @author Alex Theedom www.readlearncode.com
  * @version 1.0
  */
-@DependsOn("ConfigurationBean")
+@DependsOn("Configuration")
 @Startup
 @Singleton
 public class PoolManager {

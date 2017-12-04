@@ -11,5 +11,5 @@ import javax.inject.Singleton;
  */
 @Startup
 @Singleton
-public class ConfigurationBean {
+public class Configuration {
 }
