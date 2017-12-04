@@ -1,6 +1,6 @@
 package com.readlearncode.subsystems;
 
-import javax.ejb.EJB;
+import javax.ejb.Stateless;
 
 /**
  * Source code github.com/readlearncode
@@ -8,7 +8,7 @@ import javax.ejb.EJB;
  * @author Alex Theedom www.readlearncode.com
  * @version 1.0
  */
-@EJB
+@Stateless
 public class RepaymentPayabilityService {
     public boolean calculatePayability(Double principle, Double income, Integer months) {
         // Calculate payability based on bank policy
