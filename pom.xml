@@ -24,6 +24,8 @@
         <module>02_10_end</module>
         <module>02_11_start</module>
         <module>02_11_end</module>
+        <module>02_12_start</module>
+        <module>02_12_end</module>
     </modules>
 
     <packaging>pom</packaging>
