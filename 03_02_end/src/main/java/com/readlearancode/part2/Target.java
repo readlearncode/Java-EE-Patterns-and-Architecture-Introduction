@@ -11,7 +11,7 @@ import javax.inject.Inject;
 public class Target {
 
     @Inject
-    @Favourite
-    private Subject subject;
+    @Favourites
+    Subject subject;
 
 }

@@ -11,6 +11,6 @@ import javax.inject.Inject;
 public class Target {
 
     @Inject
-    private Subject subject;
+    Subject subject;
 
 }

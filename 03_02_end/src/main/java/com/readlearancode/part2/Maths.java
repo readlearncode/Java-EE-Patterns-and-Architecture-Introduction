@@ -6,6 +6,6 @@ package com.readlearancode.part2;
  * @author Alex Theedom www.readlearncode.com
  * @version 1.0
  */
-@Favourite
+@Favourites
 public class Maths implements Subject {
 }
