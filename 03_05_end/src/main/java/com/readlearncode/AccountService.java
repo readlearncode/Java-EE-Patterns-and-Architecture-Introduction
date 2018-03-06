@@ -1,6 +1,7 @@
-package com.readlearncode.part2;
+package com.readlearncode;
 
 import javax.interceptor.ExcludeClassInterceptors;
+import javax.interceptor.Interceptors;
 
 /**
  * Source code github.com/readlearncode
@@ -8,7 +9,7 @@ import javax.interceptor.ExcludeClassInterceptors;
  * @author Alex Theedom www.readlearncode.com
  * @version 1.0
  */
-@Loggable
+@Interceptors(LoggerInterceptor.class)
 public class AccountService {
 
 

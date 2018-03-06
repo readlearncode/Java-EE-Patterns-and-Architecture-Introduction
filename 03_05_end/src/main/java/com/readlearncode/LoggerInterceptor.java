@@ -1,4 +1,4 @@
-package com.readlearncode.part1;
+package com.readlearncode;
 
 import javax.inject.Inject;
 import javax.interceptor.AroundConstruct;
@@ -29,7 +29,8 @@ public class LoggerInterceptor {
         List<String> params = Stream.of(ic.getParameters())
                 .map(Object::toString)
                 .collect(Collectors.toList());
-        logger.info("Method: " + ic.getMethod().getName() + " called with parameters: " + params);
+        logger.info("Method: " + ic.getMethod().getName()
+                + " called with parameters: " + params);
         return ic.proceed();
     }
 
