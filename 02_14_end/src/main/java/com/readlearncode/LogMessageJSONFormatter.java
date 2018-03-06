@@ -1,6 +1,5 @@
 package com.readlearncode;
 
-
 import com.readlearncode.thirdpartylogger.LogMessage;
 
 import javax.annotation.Priority;
