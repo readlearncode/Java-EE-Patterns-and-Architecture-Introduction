@@ -1,11 +1,11 @@
-package com.readlearncode.Interceptor.part1;
+package com.readlearncode.part2;
 
+import javax.annotation.Priority;
 import javax.inject.Inject;
 import javax.interceptor.AroundConstruct;
 import javax.interceptor.AroundInvoke;
 import javax.interceptor.Interceptor;
 import javax.interceptor.InvocationContext;
-import javax.transaction.Transactional;
 import java.util.List;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
@@ -18,7 +18,8 @@ import java.util.stream.Stream;
  * @version 1.0
  */
 @Interceptor
-@Transactional
+@Loggable
+@Priority(10)
 public class LoggerInterceptor {
 
     @Inject
@@ -26,21 +27,18 @@ public class LoggerInterceptor {
 
     @AroundInvoke
     private Object doMethodLogging(InvocationContext ic) throws Exception {
-        List<String> params = Stream.of(ic.getParameters())
-                .map(Object::toString)
-                .collect(Collectors.toList());
+        List<String> params = Stream.of(ic.getParameters()).map(Object::toString).collect(Collectors.toList());
         logger.info("Method: " + ic.getMethod().getName() + " called with parameters: " + params);
         return ic.proceed();
     }
 
-
     @AroundConstruct
-    private void doClassLogging(InvocationContext ic) throws Exception {
-
+    private Object doClassLogging(InvocationContext ic) throws Exception {
+        logger.info("Constructor: " + ic.getConstructor() + " on class: " + ic.getTarget());
         long start = System.currentTimeMillis();
-        ic.proceed();
+        Object rtn = ic.proceed();
         long end = System.currentTimeMillis();
-
         logger.info("Execution time: " + (end - start));
+        return rtn;
     }
 }

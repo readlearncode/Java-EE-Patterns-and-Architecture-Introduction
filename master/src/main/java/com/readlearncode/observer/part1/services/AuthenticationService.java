@@ -1,6 +1,7 @@
 package com.readlearncode.observer.part1.services;
 
-import com.readlearncode.observer.part1.Customer;
+
+import com.readlearncode.facade.Customer;
 
 import javax.annotation.Priority;
 import javax.enterprise.event.Observes;

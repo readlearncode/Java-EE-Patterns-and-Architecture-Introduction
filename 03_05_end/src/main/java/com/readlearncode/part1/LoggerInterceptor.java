@@ -1,4 +1,4 @@
-package com.readlearncode.Interceptor.part1;
+package com.readlearncode.part1;
 
 import javax.inject.Inject;
 import javax.interceptor.AroundConstruct;

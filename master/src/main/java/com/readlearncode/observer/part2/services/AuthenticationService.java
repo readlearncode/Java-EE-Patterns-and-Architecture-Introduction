@@ -1,12 +1,9 @@
 package com.readlearncode.observer.part2.services;
 
-import com.readlearncode.observer.part2.Customer;
-import com.readlearncode.observer.part2.CustomerEvent;
 
 import javax.enterprise.event.Observes;
 
-import static com.readlearncode.observer.part2.CustomerEvent.Type.ADD;
-import static com.readlearncode.observer.part2.CustomerEvent.Type.REMOVE;
+
 
 /**
  * Source code github.com/readlearncode

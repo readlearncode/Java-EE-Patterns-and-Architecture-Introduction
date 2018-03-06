@@ -33,6 +33,8 @@
         <module>03_02_end</module>
         <module>03_03_start</module>
         <module>03_03_end</module>
+        <module>03_05_start</module>
+        <module>03_05_end</module>
     </modules>
 
     <packaging>pom</packaging>

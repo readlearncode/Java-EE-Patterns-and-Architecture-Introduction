@@ -1,6 +1,5 @@
 package com.readlearncode.observer.part1;
 
-import com.readlearncode.observer.part2.Customer;
 
 import javax.ejb.Stateless;
 import javax.enterprise.event.Event;
